@@ -1,0 +1,362 @@
+Task Details
+
+Python – Strings
+Create the following string variables:
+first_name
+last_name
+city
+
+ Create string variables
+first_name = "Shaik"
+last_name = "Reshma"
+city = "Bengaluru"
+
+ Print the variables
+print("First Name:", first_name)
+print("Last Name:", last_name)
+print("City:", city)
+
+output:
+First Name: Shaik
+Last Name: Reshma
+City: Bengaluru
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Perform the following operations:
+Concatenate first name and last name using +.
+Repeat the city name 3 times using *.
+
+ String variables
+first_name = "Shaik"
+last_name = "Reshma"
+city = "Bengaluru"
+
+ Concatenate first name and last name using +
+full_name = first_name + " " + last_name
+print("Full Name:", full_name)
+
+ Repeat the city name 3 times using *
+city_repeat = city * 3
+print("City repeated:", city_repeat)
+
+output:
+Full Name: Shaik Reshma
+City repeated: BengaluruBengaluruBengaluru
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Apply and print the results of the following methods:
+upper()
+lower()
+title()
+capitalize()
+
+ String variables
+first_name = "Shaik"
+last_name = "Reshma"
+city = "Bengaluru"
+
+ Apply string methods
+print("Uppercase:", first_name.upper())
+print("Lowercase:", last_name.lower())
+print("Title case:", city.title())
+print("Capitalized:", city.capitalize())
+
+output:
+Uppercase: SHAIK
+Lowercase: reshma
+Title case: Bengaluru
+Capitalized: Bengaluru
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Use the following methods and display the output:
+find()
+count()
+
+ String variables
+first_name = "Shaik"
+last_name = "Reshma"
+city = "Bengaluru"
+
+ Using find() - returns the index of the first occurrence
+print("Index of 'a' in first_name:", first_name.find("a"))
+print("Index of 's' in last_name:", last_name.find("s"))
+print("Index of 'gal' in city:", city.find("gal"))
+
+ Using count() - returns the number of occurrences
+print("Count of 'a' in first_name:", first_name.count("a"))
+print("Count of 's' in last_name:", last_name.count("s"))
+print("Count of 'u' in city:", city.count("u"))
+
+output:
+Index of 'a' in first_name: 1
+Index of 's' in last_name: 0
+Index of 'gal' in city: 2
+Count of 'a' in first_name: 2
+Count of 's' in last_name: 1
+Count of 'u' in city: 1
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Create a string with leading and trailing spaces and perform:
+strip()
+lstrip()
+rstrip()
+
+ String with leading and trailing spaces
+sample_text = "   Bengaluru   "
+
+ Remove spaces from both ends
+print("strip():", sample_text.strip())
+
+ Remove spaces from the left side only
+print("lstrip():", sample_text.lstrip())
+
+ Remove spaces from the right side only
+print("rstrip():", sample_text.rstrip())
+
+output:
+strip(): Bengaluru
+lstrip(): Bengaluru   
+rstrip():    Bengaluru
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Convert a sentence into a list using split()
+ Create a sentence
+sentence = "I am learning Python programming"
+
+ Convert sentence into a list using split()
+words_list = sentence.split()
+
+ Print the result
+print("Original sentence:", sentence)
+print("List of words:", words_list)
+
+output:
+Original sentence: I am learning Python programming
+List of words: ['I', 'am', 'learning', 'Python', 'programming']
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Join a list of words into a string using join().
+ List of words
+words_list = ["I", "am", "learning", "Python", "programming"]
+
+ Join the list into a string using spaces
+sentence = " ".join(words_list)
+
+ Print the result
+print("List of words:", words_list)
+print("Joined sentence:", sentence)
+
+output:
+List of words: ['I', 'am', 'learning', 'Python', 'programming']
+Joined sentence: I am learning Python programming
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Check and print the results of:
+isalpha()
+isdigit()
+isalnum()
+
+ String variables
+first_name = "Shaik"
+last_name = "Reshma"
+city = "Bengaluru"
+number_str = "12345"
+mixed_str = "Reshma123"
+
+ Check and print results
+print("first_name isalpha():", first_name.isalpha())
+print("number_str isdigit():", number_str.isdigit())
+print("mixed_str isalnum():", mixed_str.isalnum())
+print("city isalpha():", city.isalpha())
+print("last_name isdigit():", last_name.isdigit())
+print("first_name isalnum():", first_name.isalnum())
+
+output:
+first_name isalpha(): True
+number_str isdigit(): True
+mixed_str isalnum(): True
+city isalpha(): True
+last_name isdigit(): False
+first_name isalnum(): True
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Verify whether a string:
+Starts with a given substring using startswith().
+Ends with a given substring using endswith().
+
+ String variable
+sentence = "I am learning Python programming"
+
+ Check if the string starts with a given substring
+print("Starts with 'I':", sentence.startswith("I"))
+print("Starts with 'am':", sentence.startswith("am"))
+
+ Check if the string ends with a given substring
+print("Ends with 'programming':", sentence.endswith("programming"))
+print("Ends with 'Python':", sentence.endswith("Python"))
+
+output:
+Starts with 'I': True
+Starts with 'am': False
+Ends with 'programming': True
+Ends with 'Python': False
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Create and print formatted strings using f"".
+ String variables
+first_name = "Shaik"
+last_name = "Reshma"
+city = "Bengaluru"
+
+ Create formatted strings using f""
+print(f"My first name is {first_name}")
+print(f"My last name is {last_name}")
+print(f"I live in {city}")
+print(f"Full name: {first_name} {last_name}")
+print(f"{first_name} is from {city}")
+
+output:
+My first name is Shaik
+My last name is Reshma
+I live in Bengaluru
+Full name: Shaik Reshma
+Shaik is from Bengaluru
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Demonstrate escape characters:
+\n
+\t
+ 
+ \n creates a new line
+print("Hello\nWorld")
+
+ \t adds a tab space
+print("Hello\tWorld")
+
+ Combining both
+print("Shaik\n\tReshma")
+
+output:
+Hello
+World
+Hello    World
+Shaik
+    Reshma
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ END PYTHON TASKS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+MySQL – Subqueries
+
+Create a table named employees with the following columns:
+emp_id
+emp_name
+department
+salary
+
+ Switch to your database (example: training_db)
+USE training_db;
+
+ Create employees table
+CREATE TABLE employees (
+    emp_id INT AUTO_INCREMENT PRIMARY KEY,    Unique employee ID
+    emp_name VARCHAR(100) NOT NULL,           Employee name
+    department VARCHAR(50),                   Department name
+    salary DECIMAL(10,2)                      Salary with 2 decimal places
+);
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Insert a minimum of 10 employee records.
+ Insert 10 employee records
+INSERT INTO employees (emp_name, department, salary)
+VALUES
+('John Doe', 'IT', 55000.00),
+('Jane Smith', 'HR', 48000.00),
+('Michael Brown', 'Finance', 62000.00),
+('Emily Davis', 'Sales', 45000.00),
+('David Wilson', 'IT', 70000.00),
+('Sophia Johnson', 'Finance', 53000.00),
+('Daniel Martinez', 'HR', 40000.00),
+('Olivia Taylor', 'Sales', 47000.00),
+('James Anderson', 'IT', 65000.00),
+('Isabella Thomas', 'Finance', 60000.00);
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Single Row Subqueries
+Write queries to:
+Find the employee(s) with the highest salary.
+Find the employee(s) with the lowest salary.
+Display employees whose salary is greater than the average salary.
+
+ 1. Find the employee(s) with the highest salary
+SELECT emp_id, emp_name, department, salary
+FROM employees
+WHERE salary = (SELECT MAX(salary) FROM employees);
+
+ 2. Find the employee(s) with the lowest salary
+SELECT emp_id, emp_name, department, salary
+FROM employees
+WHERE salary = (SELECT MIN(salary) FROM employees);
+
+ 3. Display employees whose salary is greater than the average salary
+SELECT emp_id, emp_name, department, salary
+FROM employees
+WHERE salary > (SELECT AVG(salary) FROM employees);
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Multiple Row Subqueries
+
+Write queries using:
+IN
+Display employees belonging to departments returned by a subquery.
+ANY
+Display employees whose salary is greater than ANY salary from the HR department.
+ALL
+Display employees whose salary is greater than ALL salaries from the Testing department.
+
+ 1. IN: Display employees belonging to departments returned by a subquery
+SELECT emp_id, emp_name, department, salary
+FROM employees
+WHERE department IN (SELECT DISTINCT department FROM employees WHERE salary > 60000);
+
+ 2. ANY: Display employees whose salary is greater than ANY salary from the HR department
+SELECT emp_id, emp_name, department, salary
+FROM employees
+WHERE salary > ANY (SELECT salary FROM employees WHERE department = 'HR');
+
+ 3. ALL: Display employees whose salary is greater than ALL salaries from the Testing department
+SELECT emp_id, emp_name, department, salary
+FROM employees
+WHERE salary > ALL (SELECT salary FROM employees WHERE department = 'Testing');
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Correlated Subqueries
+
+Write queries to:
+Display employees whose salary is greater than the average salary of their own department.
+Display employees who receive the highest salary in their respective departments.
+
+ 1. Display employees whose salary is greater than the average salary of their own department
+SELECT emp_id, emp_name, department, salary
+FROM employees e
+WHERE salary > (
+    SELECT AVG(salary)
+    FROM employees
+    WHERE department = e.department
+);
+
+ 2. Display employees who receive the highest salary in their respective departments
+SELECT emp_id, emp_name, department, salary
+FROM employees e
+WHERE salary = (
+    SELECT MAX(salary)
+    FROM employees
+    WHERE department = e.department
+);
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ END SQL TASKS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
